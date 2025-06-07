@@ -3,3 +3,10 @@
 [user]
 	name = Mikhail Mikheev
 	email = 16622558+mmv08@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICkyeZHiqYDSmPhvkrkiCbvgHFOHVl71LAT0oEZqJm+C
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true

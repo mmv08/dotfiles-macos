@@ -16,7 +16,6 @@ jobs:
 
       - name: Prepare system
         run: |
-          xcode-select --install
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
       - name: Run bootstrap (first pass)

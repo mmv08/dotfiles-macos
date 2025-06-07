@@ -1,0 +1,26 @@
+name: Bootstrap CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  bootstrap-test:
+    name: Test Bootstrap Script
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Prepare system
+        run: |
+          xcode-select --install
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+      - name: Run bootstrap (first pass)
+        run: bash dotfiles-meta/bootstrap.sh
+
+      - name: Run bootstrap (idempotency check)
+        run: bash dotfiles-meta/bootstrap.sh

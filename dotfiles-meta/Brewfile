@@ -40,6 +40,7 @@ cask "transmission"
 cask "visual-studio-code"
 cask "windsurf"
 cask "zoom"
+mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835

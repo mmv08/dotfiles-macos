@@ -1,4 +1,5 @@
 tap "jesseduffield/lazydocker"
+brew "act"
 brew "bat"
 brew "biome"
 brew "btop"

@@ -40,7 +40,6 @@ cask "tableplus"
 cask "telegram"
 cask "transmission"
 cask "visual-studio-code"
-cask "windsurf"
 cask "zoom"
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541

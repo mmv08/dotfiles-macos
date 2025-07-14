@@ -18,7 +18,4 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 . "$HOME/.local/bin/env"
 
-# Added by Windsurf
-export PATH="/Users/mmv/.codeium/windsurf/bin:$PATH"
-
 eval "$(starship init zsh)"

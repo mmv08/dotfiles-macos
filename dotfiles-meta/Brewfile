@@ -11,6 +11,7 @@ brew "gh"
 brew "git"
 brew "mas"
 brew "nvm"
+brew "pixi"
 brew "ripgrep"
 brew "starship"
 brew "stow"
@@ -46,6 +47,7 @@ cask "visual-studio-code"
 cask "zoom"
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
+mas "WhatsApp", id: 310633997
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 vscode "anthropic.claude-code"
@@ -67,6 +69,7 @@ vscode "luniclynx.lex"
 vscode "mads-hartmann.bash-ide-vscode"
 vscode "martinring.smt-lib-syntax"
 vscode "mikestead.dotenv"
+vscode "modular-mojotools.vscode-mojo"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"

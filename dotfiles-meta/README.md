@@ -12,7 +12,7 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # clone bare repo
-git clone --bare git@github.com:mmv08/dotfiles-macos.git $HOME/.dotfiles
+git clone --bare https://github.com/mmv08/dotfiles-macos $HOME/.dotfiles
 alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 dot checkout
 dot config --local status.showUntrackedFiles no

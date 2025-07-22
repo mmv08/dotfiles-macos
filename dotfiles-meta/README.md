@@ -33,7 +33,7 @@ bash dotfiles-meta/bootstrap.sh
  dot pull
 
 # update brewfile
- brew bundle dump --file meta/Brewfile --force
+ brew bundle dump --file dotfiles-meta/Brewfile --force
 ```
 
 ---

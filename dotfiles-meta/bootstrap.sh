@@ -12,5 +12,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
+# Zsh plugins
+git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUSTOM/plugins/zsh-bat
+
 defaults write com.apple.dock show-recents -bool false;
 defaults write com.apple.dock persistent-apps -array; 

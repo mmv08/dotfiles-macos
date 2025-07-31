@@ -47,6 +47,7 @@ cask "telegram"
 cask "todoist-app"
 cask "transmission"
 cask "visual-studio-code"
+cask "zed"
 cask "zoom"
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541

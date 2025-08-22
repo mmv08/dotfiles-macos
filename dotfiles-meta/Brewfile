@@ -7,8 +7,10 @@ brew "btop"
 brew "cloc"
 brew "fastfetch"
 brew "foundry"
+brew "fzf"
 brew "gh"
 brew "git"
+brew "hyperfine"
 brew "imagemagick"
 brew "mas"
 brew "nvm"
@@ -54,8 +56,8 @@ cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
-mas "WireGuard", id: 1451685025
 mas "WhatsApp", id: 310633997
+mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 vscode "anthropic.claude-code"
 vscode "biomejs.biome"

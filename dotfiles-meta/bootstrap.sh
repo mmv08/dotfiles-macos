@@ -23,5 +23,9 @@ if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-bat" ]; then
   git clone https://github.com/fdellwing/zsh-bat.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-bat"
 fi
 
-defaults write com.apple.dock show-recents -bool false;
-defaults write com.apple.dock persistent-apps -array; 
+# Configure macOS Dock (only on initial setup)
+if [ ! -f "$HOME/.dotfiles-dock-configured" ]; then
+  defaults write com.apple.dock show-recents -bool false
+  defaults write com.apple.dock persistent-apps -array
+  touch "$HOME/.dotfiles-dock-configured"
+fi 

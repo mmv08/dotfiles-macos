@@ -19,6 +19,8 @@ dot config --local status.showUntrackedFiles no
 
 # install packages & extras
 bash dotfiles-meta/bootstrap.sh
+
+dot remote set-url origin git@github.com:mmv08/dotfiles-macos.git
 ```
 
 ---

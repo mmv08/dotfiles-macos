@@ -20,6 +20,7 @@ brew "ripgrep"
 brew "smartmontools"
 brew "starship"
 brew "stow"
+brew "ttyd"
 brew "uv"
 brew "zsh"
 brew "zsh-autosuggestions"
@@ -30,6 +31,7 @@ cask "1password"
 cask "cursor"
 cask "discord"
 cask "firefox"
+cask "font-hack-nerd-font"
 cask "google-chrome"
 cask "grammarly-desktop"
 cask "insomnia"
@@ -59,7 +61,6 @@ mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 310633997
 mas "WireGuard", id: 1451685025
-mas "Xcode", id: 497799835
 vscode "anthropic.claude-code"
 vscode "biomejs.biome"
 vscode "dbaeumer.vscode-eslint"
@@ -81,4 +82,3 @@ vscode "orta.vscode-jest"
 vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
-

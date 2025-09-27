@@ -33,6 +33,7 @@ cask "cursor"
 cask "discord"
 cask "firefox"
 cask "font-hack-nerd-font"
+cask "font-inconsolata-nerd-font"
 cask "google-chrome"
 cask "grammarly-desktop"
 cask "insomnia"
@@ -60,8 +61,6 @@ cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
-mas "WhatsApp", id: 310633997
-mas "WireGuard", id: 1451685025
 vscode "anthropic.claude-code"
 vscode "biomejs.biome"
 vscode "dbaeumer.vscode-eslint"

@@ -22,3 +22,4 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(starship init zsh)"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"

@@ -12,3 +12,5 @@
 	gpgsign = true
 [pull]
 	rebase = false
+[core]
+	excludesfile = /Users/mmv/.gitignore

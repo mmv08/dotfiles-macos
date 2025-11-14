@@ -12,7 +12,7 @@ alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias ls="lsd"
 
-alias scroll-toggle="$HOME/dotfiles-meta/scripts/toggle_natural_scrolling.py"
+alias toggle-scroll="$HOME/dotfiles-meta/scripts/toggle_natural_scrolling.py"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

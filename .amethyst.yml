@@ -1,0 +1,8 @@
+mod1:
+  - control
+  - option
+
+mod2:
+  - control
+  - option
+  - shift

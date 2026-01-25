@@ -6,3 +6,10 @@ mod2:
   - control
   - option
   - shift
+
+layouts:
+  - tall
+  - fullscreen
+  - wide
+  - column
+  - 3column-middle

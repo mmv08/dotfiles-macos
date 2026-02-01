@@ -50,6 +50,15 @@ $HOME
 
 ---
 
+## Amethyst layouts
+
+- Source: `dotfiles-meta/amethyst/Layouts/`
+- Install: `bash dotfiles-meta/scripts/install_amethyst_layouts.sh`
+- Destination: `~/Library/Application Support/Amethyst/Layouts`
+- Idempotent: safe to run multiple times; removes stale symlinks for deleted layouts
+
+---
+
 ## Architecture reminder
 
 - **Bare repo**: `~/.dotfiles` is a _bare_ Git repo; `$HOME` acts as the work‑tree.

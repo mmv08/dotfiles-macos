@@ -36,3 +36,6 @@ fi
 # Disable Siri and Text Input Menu (safe to re run since I always want them off)
 defaults write com.apple.TextInputMenu visible -bool false
 defaults write com.apple.Siri StatusMenuVisible -bool false
+
+# Show all file extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true

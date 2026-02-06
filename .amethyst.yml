@@ -12,4 +12,5 @@ layouts:
   - fullscreen
   - wide
   - column
-  - 3column-middle
+  - 3column-mid-focus
+  - 5column-middle

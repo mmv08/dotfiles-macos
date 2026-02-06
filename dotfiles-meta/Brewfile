@@ -56,7 +56,6 @@ cask "telegram"
 cask "todoist-app"
 cask "transmission"
 cask "visual-studio-code"
-cask "warp"
 cask "zed"
 cask "zoom"
 mas "1Password for Safari", id: 1569813296

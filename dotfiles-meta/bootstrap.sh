@@ -32,3 +32,7 @@ if [ ! -f "$HOME/.dotfiles-dock-configured" ]; then
   defaults write com.apple.dock persistent-apps -array
   touch "$HOME/.dotfiles-dock-configured"
 fi 
+
+# Disable Siri and Text Input Menu (safe to re run since I always want them off)
+defaults write com.apple.TextInputMenu visible -bool false
+defaults write com.apple.Siri StatusMenuVisible -bool false

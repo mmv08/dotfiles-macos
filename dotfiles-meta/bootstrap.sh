@@ -39,3 +39,18 @@ defaults write com.apple.Siri StatusMenuVisible -bool false
 
 # Show all file extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable all hot corners
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+
+# Clear modifiers (optional but nice to keep clean)
+defaults write com.apple.dock wvous-tl-modifier -int 0
+defaults write com.apple.dock wvous-tr-modifier -int 0
+defaults write com.apple.dock wvous-bl-modifier -int 0
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Restart Dock
+killall Dock

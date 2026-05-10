@@ -24,6 +24,7 @@ brew "ripgrep"
 brew "smartmontools"
 brew "starship"
 brew "stow"
+brew "tmux"
 brew "ttyd"
 brew "uv"
 brew "yt-dlp"
@@ -70,12 +71,12 @@ mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
 mas "WhatsApp", id: 310633997
 mas "WireGuard", id: 1451685025
+mas "Xcode", id: 497799835
 vscode "anthropic.claude-code"
 vscode "biomejs.biome"
 vscode "dbaeumer.vscode-eslint"
 vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.vscode-pull-request-github"
 vscode "golang.go"

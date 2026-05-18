@@ -75,6 +75,8 @@ mas "1Password for Safari", id: 1569813296
 mas "Bee DICOM Viewer", id: 1590273176
 mas "Craft", id: 1487937127
 mas "Pages", id: 409201541
+mas "Pages", id: 361309726
+mas "Tailscale", id: 1475387142
 mas "WhatsApp", id: 310633997
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
@@ -104,3 +106,6 @@ vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
 vscode "waderyan.gitblame"
 uv "kimi-cli"
+npm "@anthropic-ai/claude-code"
+npm "@google/gemini-cli"
+npm "corepack"

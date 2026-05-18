@@ -22,8 +22,10 @@
   "agent": {
     "dock": "right",
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-sonnet-4-thinking"
+      "effort": "xhigh",
+      "enable_thinking": true,
+      "provider": "openai-subscribed",
+      "model": "gpt-5.5"
     }
   },
   "ui_font_size": 16,

@@ -65,7 +65,7 @@ $HOME
 - **Alias**: `alias dot='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'` for all Git ops.
 - **Meta dir**: `dotfiles-meta/` stores anything that doesn’t belong directly in `$HOME` plus helper scripts.
 - **Brewfile**: `dotfiles-meta/Brewfile` is the single source of truth for CLI tools, GUI apps and fonts.
-- **Provisioning**: `dotfiles-meta/install.sh` symlinks/copies external configs and installs plugins/toolchains.
+- **Provisioning**: `dotfiles-meta/bootstrap.sh` installs packages, extras, plugins, toolchains, and macOS defaults.
 
 ---
 

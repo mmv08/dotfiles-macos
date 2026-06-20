@@ -5,7 +5,8 @@ brew bundle --file ./dotfiles-meta/Brewfile
 
 # Install oh-my-zsh
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+  # The tracked .zshrc is checked out before bootstrap; keep it as the source of truth.
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 fi
 
 # Install rustup
@@ -40,6 +41,21 @@ defaults write com.apple.Siri StatusMenuVisible -bool false
 # Show all file extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Show Finder path and status bars
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Save screenshots to a dedicated folder
+screenshots_dir="$HOME/Pictures/Screenshots"
+mkdir -p "$screenshots_dir"
+defaults write com.apple.screencapture location -string "$screenshots_dir"
+
+# Keep Spaces in a stable order for predictable window management
+defaults write com.apple.dock mru-spaces -bool false
+
+# Automatically hide the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Disable all hot corners
 defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tr-corner -int 0
@@ -52,5 +68,7 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 
-# Restart Dock
-killall Dock
+# Restart affected UI services
+killall Finder 2>/dev/null || true
+killall Dock 2>/dev/null || true
+killall SystemUIServer 2>/dev/null || true

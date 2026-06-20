@@ -53,6 +53,9 @@ defaults write com.apple.screencapture location -string "$screenshots_dir"
 # Keep Spaces in a stable order for predictable window management
 defaults write com.apple.dock mru-spaces -bool false
 
+# Automatically hide the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Disable all hot corners
 defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tr-corner -int 0

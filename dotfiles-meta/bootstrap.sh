@@ -41,6 +41,18 @@ defaults write com.apple.Siri StatusMenuVisible -bool false
 # Show all file extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Show Finder path and status bars
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Save screenshots to a dedicated folder
+screenshots_dir="$HOME/Pictures/Screenshots"
+mkdir -p "$screenshots_dir"
+defaults write com.apple.screencapture location -string "$screenshots_dir"
+
+# Keep Spaces in a stable order for predictable window management
+defaults write com.apple.dock mru-spaces -bool false
+
 # Disable all hot corners
 defaults write com.apple.dock wvous-tl-corner -int 0
 defaults write com.apple.dock wvous-tr-corner -int 0
@@ -53,5 +65,7 @@ defaults write com.apple.dock wvous-tr-modifier -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
 
-# Restart Dock
-killall Dock
+# Restart affected UI services
+killall Finder 2>/dev/null || true
+killall Dock 2>/dev/null || true
+killall SystemUIServer 2>/dev/null || true

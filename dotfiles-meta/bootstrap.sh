@@ -45,6 +45,12 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder ShowStatusBar -bool true
 
+# Sort files by name by default in Finder icon view
+finder_plist="$HOME/Library/Preferences/com.apple.finder.plist"
+/usr/libexec/PlistBuddy \
+  -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" \
+  "$finder_plist"
+
 # Save screenshots to a dedicated folder
 screenshots_dir="$HOME/Pictures/Screenshots"
 mkdir -p "$screenshots_dir"
